@@ -9,6 +9,7 @@ const Playlist = ({ playlist, currentPlayingIndex, onPlay }) => {
             {playlist.map((audio, index) => (
                 <div key={index} className="audio-item">
                     <span className="audio-name">{audio.name}</span>
+                    <span className="audio-name">{index+1}</span>
                     <button className="play-btn" onClick={() => onPlay(index)}>Play</button>
                 </div>
             ))}
